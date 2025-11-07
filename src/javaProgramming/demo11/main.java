@@ -2,7 +2,7 @@ package javaProgramming.demo11;
 
 import java.io.*;
 import java.util.Scanner;
-
+// tet是测试文件
 public class main {
     public static void main(String[] args) throws Exception {
         FileWriter out = new FileWriter("D:\\java_test\\tele\\src\\javaProgramming\\demo11\\tet");
