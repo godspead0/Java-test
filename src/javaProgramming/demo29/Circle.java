@@ -10,22 +10,18 @@ public class Circle implements Shape {
         this.radius = radius;
     }
 
-    @Override
     public double calculateArea() {
         return PI * radius * radius;
     }
 
-    @Override
     public double calculatePerimeter() {
         return 2 * PI * radius;
     }
 
-    @Override
     public String getShapeName() {
         return "圆形";
     }
 
-    @Override
     public void displayInfo() {
         System.out.println("=== 圆形信息 ===");
         System.out.println("图形名称: " + getShapeName());

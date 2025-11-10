@@ -12,22 +12,18 @@ public class Rectangle implements Shape {
         this.width = width;
     }
 
-    @Override
     public double calculateArea() {
         return length * width;
     }
 
-    @Override
     public double calculatePerimeter() {
         return 2 * (length + width);
     }
 
-    @Override
     public String getShapeName() {
         return "矩形";
     }
 
-    @Override
     public void displayInfo() {
         System.out.println("=== 矩形信息 ===");
         System.out.println("图形名称: " + getShapeName());

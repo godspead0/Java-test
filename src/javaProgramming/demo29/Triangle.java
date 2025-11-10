@@ -19,23 +19,19 @@ public class Triangle implements Shape {
                (a + b > c) && (a + c > b) && (b + c > a);
     }
 
-    @Override
     public double calculateArea() {
         double s = calculatePerimeter() / 2; // 半周长
         return Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC)); // 海伦公式
     }
 
-    @Override
     public double calculatePerimeter() {
         return sideA + sideB + sideC;
     }
 
-    @Override
     public String getShapeName() {
         return "三角形";
     }
 
-    @Override
     public void displayInfo() {
         System.out.println("=== 三角形信息 ===");
         System.out.println("图形名称: " + getShapeName());
