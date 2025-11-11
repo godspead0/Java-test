@@ -82,15 +82,13 @@ public class main {
         Book book = new Book(bookName, author, isbn, count);
         library.add(book);
     }
-    
-    // 交互式借书
+
     private static void borrowBookInteractive(Library library, Scanner sc) {
         System.out.print("\n请输入要借阅的图书ISBN编号: ");
         String isbn = sc.nextLine().trim();
         library.borrowBook(isbn);
     }
-    
-    // 交互式还书
+
     private static void returnBookInteractive(Library library, Scanner sc) {
         System.out.print("\n请输入要归还的图书ISBN编号: ");
         String isbn = sc.nextLine().trim();

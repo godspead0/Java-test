@@ -101,7 +101,7 @@ public class Library {
     public void saveBooksToFile() {
         try (PrintWriter writer = new PrintWriter("src/javaProgramming/demo31/book.txt")) {
             for (Book book : books) {
-                writer.printf("%s,%s,%s,%d%n",
+                writer.printf("%s|%s|%s|%d%n",
                     book.getBookISBN(), 
                     book.getBookName(), 
                     book.getBookAuthor(), 
@@ -112,8 +112,7 @@ public class Library {
             System.out.println("保存文件失败: " + e.getMessage());
         }
     }
-    
-    // 从文件加载图书数据（替换为文本格式）
+
     private void loadBooksFromFile() {
         File file = new File("src/javaProgramming/demo31/book.txt");
         if (!file.exists()) {
