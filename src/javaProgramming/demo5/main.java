@@ -6,6 +6,7 @@ public class main {
     public static void main(String[] args){
         LeapYear leapYear = new LeapYear();
         Scanner sc = new Scanner(System.in);
+        System.out.println("请输入年份");
         int year = sc.nextInt();
         if(leapYear.getLeapYear(year)){
             System.out.println("YES");
