@@ -22,10 +22,13 @@ public class main {
                 Product mem = new Product(name,price);
                 products.add(mem);
                 mem.SetProductId(products.size());
+                System.out.println("添加成功");
+                for(int i=1;i<=products.size();i++)
+                    products.get(i-1).getProduct(products.get(i-1));
             }else if(choice==0) {
                 break;
             }else if(choice==2) {
-                System.out.println("请输入要查询的商品");
+                System.out.println("请输入要查询的商品编号");
                 int id = sc.nextInt();
                 products.get(id-1).getProduct(products.get(id-1));
             }else{

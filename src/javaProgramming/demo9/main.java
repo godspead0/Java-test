@@ -7,6 +7,7 @@ public class main {
         //System.out.println("请输入数字");
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("请输入数字");
         try{
             int a = sc.nextInt();
             checkNum(a);
